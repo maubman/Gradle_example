@@ -3,19 +3,19 @@ import org.junit.Before;
 import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
-public class TestPrueba {
+public class testHello {
     @Before
     public void beforeTestDo(){
         System.out.println("Antes de las pruebas");
     }
     @Test
-    public void testPrueba1 (){
+    public void testGet (){
         System.out.println("This is a test");
-        assertEquals (true);
+        assertEquals ("Hello Mundito", new Hello().getHello());
     }
 
     @After
     public void afterTestDo(){
-        System.out.println("This should appear after test1");
+        System.out.println("Despues de la prueba");
     }
 }
